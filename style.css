@@ -69,16 +69,38 @@ img{
 
 header{
     background: var(--primary-color);
+    position: fixed;
+    z-index: 5;
+    
 }
 
 header .navbar{
-    display: flex;
+    display: flex: ;
     padding: 20px;
     justify-content: space-between;
     align-items: center;
     /*padding: 1rem 2rem;*/
 }
 
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width); 
+
+}
+
+.hero-section{
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
+}
 .navbar .nav-menu{
     display: flex;
     gap:10px;
@@ -86,7 +108,7 @@ header .navbar{
 .navbar .nav-logo .logo-text{
 
    color:var(--white-color);
-   font-size:(var(--font-size-xxl));
+   font-size:var(--font-size-xxl);
     font-weight: var(--font-weight-bold);
 }
 
