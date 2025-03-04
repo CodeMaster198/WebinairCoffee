@@ -75,23 +75,39 @@ header{
 }
 
 header .navbar{
-    display: flex: ;
+    display: flex;
     padding: 20px;
-    justify-content: space-between;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     align-items: center;
-    /*padding: 1rem 2rem;*/
 }
 
 .section-content{
     margin: 0 auto;
     padding: 0 20px;
     max-width: var(--site-max-width); 
+    display: flex;
+    justify-content: flex-end;
 
 }
 
 .hero-section{
     min-height: 100vh;
     background: var(--primary-color);
+}
+
+
+.hero-section .hero-details .title{
+    font-size: var(--font-size-xxl);
+    color:var(--secondary-color);
+    font-family: "Miniver", sans-serif;
+}
+
+.hero-section .hero-details .sub-title{
+    font-size: var(--font-size-xl);
+    max-width: 70%;
+    margin-top: 8px;
+    font-weight: var(--font-weight-semibold);
 }
 
 .hero-section .section-content{
@@ -101,9 +117,53 @@ header .navbar{
     color: var(--white-color);
     justify-content: space-between;
 }
+
+.hero-section .hero-details .description{
+    max-width: 70%;
+    margin: 24px 0 40px;
+    font-size: var(--font-size-m);
+}
 .navbar .nav-menu{
     display: flex;
     gap:10px;
+}
+
+.hero-section .hero-details .button{
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    font-weight: var(--font-weight-medium);
+
+
+}
+
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .contact-us{
+    color: var(--white-color);
+    background:transparent;
+    border-color: var(--white-color);
+}
+
+.hero-section .hero-details .contact-us:hover{
+
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.hero-section .hero-details .buttons{
+    gap:23px;
+    display: flex;
+
+
+}
+
+.hero-section .hero-image-wrapper{
+
+    max-width: 500px;
+    margin-right: 30px;
 }
 .navbar .nav-logo .logo-text{
 
