@@ -46,6 +46,20 @@
 
 }
 
+.navbar :where(#menu-close-button,#menu-open-button){
+    display: none;
+}
+
+.navbar #menu-close-button{
+    position: absolute;
+    right: 30px;
+    top:30px
+}
+
+.navbar #menu-open-button{
+    color: var(--white-color);
+}
+
 ul{
     list-style: none;
 }
@@ -68,27 +82,23 @@ img{
 /* Navbar Styling */
 
 header{
+   
     background: var(--primary-color);
-    position: fixed;
-    z-index: 5;
     
 }
 
 header .navbar{
-    display: flex;
+     display: flex;
     padding: 20px;
-    justify-content: flex-end;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;  /* Ceci aligne déjà les éléments à droite */
 }
 
 .section-content{
     margin: 0 auto;
     padding: 0 20px;
     max-width: var(--site-max-width); 
-    display: flex;
-    justify-content: flex-end;
-
+  
 }
 
 .hero-section{
@@ -124,8 +134,15 @@ header .navbar{
     font-size: var(--font-size-m);
 }
 .navbar .nav-menu{
+   
     display: flex;
-    gap:10px;
+    gap: 10px;
+}
+
+body.show-mobile-menu .navbar .nav-menu{
+    left: 0;
+
+
 }
 
 .hero-section .hero-details .button{
@@ -169,19 +186,62 @@ header .navbar{
 
    color:var(--white-color);
    font-size:var(--font-size-xxl);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
 }
 
 .navbar .nav-menu .nav-link{
-    padding: 10px 18px;
-    color:var(--white-color);
-    background: var(--primary-color);
-    border-radius: var(--border-radius-m);
+
+    padding: 10px 18px;  
+    gap: 10px;
+    color: var(--white-color);
     font-size: var(--font-size-m);
+    background: transparent;
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
 
    
 }
 .navbar .nav-menu .nav-link:hover{  
     background: var(--secondary-color);
-    color:var(--primary-color);
+    color:var(--white-color);
+}
+
+
+@media screen and (max-width:900px){
+ :root{
+    
+    --font-size-m:1rem;
+    --font-size-l:1.3rem;
+    --font-size-xl:1.5rem;
+    --font-size-xxl:1.8rem;
+ }
+    .navbar .nav-menu{
+        display: block;
+        position: fixed;
+        left:0;
+        top:0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px; 
+        background: var(--white-color);
+        transition: left 0.2 ease;
+
+    }
+    .navbar .nav-menu .nav-link{
+        color:var(--dark-color);
+        display: block;
+        margin-top: 17px;
+        font-size: var(--font-size-l);
+    }
+
+    .navbar :where(#menu-close-button,#menu-open-button){
+        display: block;
+        font-size: var(--white-color);
+
+    }
+    
+    
 }

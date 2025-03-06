@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Webinair Coffee</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar">    
             <a href="#" class="nav-logo">
                 <h2 class="logo-text">☕ Coffee </h2>
             </a>
             <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
                 </li>
@@ -22,7 +24,7 @@
                     <a href="#" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
+                    <a href="#" class="nav-link">Menu</a>   
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Testimonials</a>
@@ -34,6 +36,8 @@
                     <a href="#" class="nav-link">Contact</a>
                 </li>
             </ul>
+            <button id="menu-open-button" class="fa fa-bars"></button>
+
         </nav>
     </header>
 
@@ -60,5 +64,5 @@
 
     </main>
 </body>
-
+<script src="script.js"></script> 
 </html>
