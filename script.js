@@ -18,3 +18,47 @@ document.addEventListener("click", (event) => {
         document.body.classList.remove("show-mobile-menu");
     }
 });
+
+//Initialize Swiper
+
+const swiper = new Swiper('.slider-wrapper', {
+    // Optional parameters
+    loop: true,
+    grabCursor:true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable:true,
+      dynamicBullets:true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+      // Autoplay
+      autoplay: {
+        delay: 5000, // 5000ms = 5 seconds
+        disableOnInteraction: false, // Keeps autoplay running even when user interacts
+    },
+
+  breakpoints: {
+
+    0:{
+        slidesPerView: 1,
+        dynamicBullets:false,
+
+    },
+    768:{
+        slidesPerView:2
+    },
+    1024:{
+        slidesPerView:3
+    }
+
+  }
+  });

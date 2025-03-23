@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Webinair Coffee</title>
+
+
+        <!-- swipe link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+        <title>Webinair Coffee</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+            <!-- Header Section-->
+
     <header>
         <nav class="navbar section-content">
             <a href="#" class="nav-logo">
@@ -41,8 +48,12 @@
             <button id="menu-open-button" class="fa fa-bars"></button>
         </nav>
     </header>
+ 
+    <main> 
+        
+        
+        <!-- Home Section -->
 
-    <main>
         <section class="hero-section">
             <div class="section-content">
                 <div class="hero-details">
@@ -61,6 +72,7 @@
             </div>
         </section>
 
+        <!-- About Section -->
 
         <section class="about-section">
             <div class="section-content">
@@ -95,6 +107,8 @@
 
 
         </section>
+
+        <!-- Menu Section -->
 
         <section class="menu-section">
 
@@ -170,46 +184,128 @@
             </div>
 
         </section>
+        
+        
+        <!-- testimonals Section -->
 
         <section class="testimonials-section">
-
-            <h2 class="section-title">Testimonails</h2>
+            <h2 class="section-title">Testimonials</h2> <!-- Fixed typo -->
             <div class="section-content">
-                <div class="slider-content">
-                    <div class="slider-wrapper">
-                        <ul class="testimonials-list">
-                            <li class="testimonial">
-                               <img src="images/user-1.jpg" alt="" class="user-image"> 
-                               <h3 class="name">Sarah Johnson</h3>
-                               <i class="feedback">Loved French roast.Perfectly balanced and rich.Will order again!</i>
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper swiper-wrapper"> <!-- Added swiper-wrapper class -->
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-1.jpg" alt="Sarah Johnson" class="user-image">
+                                <h3 class="name">Sarah Johnson</h3>
+                                <i class="feedback">Loved French roast. Perfectly balanced and rich. Will order again!</i>
                             </li>
-                            <li class="testimonial">
-                                <img src="images/user-2.jpg" alt="" class="user-image"> 
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-2.jpg" alt="James Wild" class="user-image">
                                 <h3 class="name">James Wild</h3>
-                                <i class="feedback">Loved French roast.Perfectly balanced and rich.Will order again!</i>
-                             </li>
-                             <li class="testimonial">
-                                <img src="images/user-3.jpg" alt="" class="user-image"> 
-                                <h3 class="name">Micheal Brown</h3>
-                                <i class="feedback">Loved French roast.Perfectly balanced and rich.Will order again!</i>
-                             </li>
-                             <li class="testimonial">
-                                <img src="images/user-4.jpg" alt="" class="user-image"> 
+                                <i class="feedback">Loved French roast. Perfectly balanced and rich. Will order again!</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-3.jpg" alt="Michael Brown" class="user-image">
+                                <h3 class="name">Michael Brown</h3>
+                                <i class="feedback">Loved French roast. Perfectly balanced and rich. Will order again!</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-4.jpg" alt="Emily Harris" class="user-image">
                                 <h3 class="name">Emily Harris</h3>
-                                <i class="feedback">Loved French roast.Perfectly balanced and rich.Will order again!</i>
-                             </li>
-                             <li class="testimonial">
-                                <img src="images/user-5.jpg" alt="" class="user-image"> 
+                                <i class="feedback">Loved French roast. Perfectly balanced and rich. Will order again!</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-5.jpg" alt="Anthony Thompson" class="user-image">
                                 <h3 class="name">Anthony Thompson</h3>
-                                <i class="feedback">Loved French roast.Perfectly balanced and rich.Will order again!</i>
-                             </li>
+                                <i class="feedback">Loved French roast. Perfectly balanced and rich. Will order again!</i>
+                            </li>
                         </ul>
                     </div>
+                    <!-- Pagination -->
+                    <div class="swiper-slider-button swiper-pagination"></div>
+                    <!-- Navigation buttons -->
+                    <div class="swiper-slider-button swiper-button-prev"></div>
+                    <div class="swiper-slider-button swiper-button-next"></div>
                 </div>
             </div>
         </section>
+        <!-- Gallery Section  -->
+
+        <section class="gallery-section">
+            <h2 class="section-title">
+                <div class="section-content">
+                    <div class="gallery-list">
+                        <a class="gallery-item">
+                            <img src="images/gallery-1.jpg" alt="Gallery" class="gallery-image">
+                        </a>
+                        <a class="gallery-item">
+                            <img src="images/gallery-2.jpg" alt="Gallery" class="gallery-image">
+                        </a>
+                        <a class="gallery-item">
+                            <img src="images/gallery-3.jpg" alt="Gallery" class="gallery-image">
+                        </a>
+                        <a class="gallery-item">
+                            <img src="images/gallery-4.jpg" alt="Gallery" class="gallery-image">
+                        </a>
+                        <a class="gallery-item">
+                            <img src="images/gallery-5.jpg" alt="Gallery" class="gallery-image">
+                        </a>
+                        <a class="gallery-item">
+                            <img src="images/gallery-6.jpg" alt="Gallery" class="gallery-image">
+                        </a>
+                      
+                    </div>
+                </div>
+            </h2>
+        </section>
+
+        <!-- Contact Section  -->
+
+        <section class="contact-section">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>2,Beb El Khadhra,Tunis</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>oussemas410@gmail.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Tél:23563116</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Lun-Sam:8:00-18:00</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Dimanche:Fermé</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.oussema-sghaier.tn</p>
+                    </li>
+                </ul>
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your Name" class="form-input" required>
+                    <input type="email" placeholder="Your Email" class="form-input" required>
+                    <textarea placeholder="Your Message" class="form-input" required> </textarea>
+                    <button class="submit-button">Submit</button>
+
+
+
+
+                </form>
+            </div>
+        </section>
+
          
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
 </body>
