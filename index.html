@@ -14,6 +14,8 @@
 
         <title>Webinair Coffee</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
 </head>
 
 <body>
@@ -30,19 +32,19 @@
                     <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
+                    <a href="#menu" class="nav-link">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Testimonials</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Gallery</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
             <button id="menu-open-button" class="fa fa-bars"></button>
@@ -74,7 +76,7 @@
 
         <!-- About Section -->
 
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="section-content">
                 <div class="about-image-wrapper">
                     <img src="images/about-image.jpg" alt="About" class="about-image">
@@ -110,7 +112,7 @@
 
         <!-- Menu Section -->
 
-        <section class="menu-section">
+        <section class="menu-section" id="menu">
 
             <h2 class="section-title">Our Menu</h2>
 
@@ -188,7 +190,7 @@
         
         <!-- testimonals Section -->
 
-        <section class="testimonials-section">
+        <section class="testimonials-section" id="testimonials">
             <h2 class="section-title">Testimonials</h2> <!-- Fixed typo -->
             <div class="section-content">
                 <div class="slider-container swiper">
@@ -231,7 +233,7 @@
         </section>
         <!-- Gallery Section  -->
 
-        <section class="gallery-section">
+        <section class="gallery-section" id="gallery">
             <h2 class="section-title">
                 <div class="section-content">
                     <div class="gallery-list">
@@ -261,7 +263,8 @@
 
         <!-- Contact Section  -->
 
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
+
             <h2 class="section-title">Contact Us</h2>
             <div class="section-content">
                 <ul class="contact-info-list">
@@ -290,10 +293,10 @@
                         <p>www.oussema-sghaier.tn</p>
                     </li>
                 </ul>
-                <form action="#" class="contact-form">
-                    <input type="text" placeholder="Your Name" class="form-input" required>
-                    <input type="email" placeholder="Your Email" class="form-input" required>
-                    <textarea placeholder="Your Message" class="form-input" required> </textarea>
+                <form action="forms/contact.php" method="post" class="contact-form" enctype="multipart/form-data">
+                    <input type="text" placeholder="Your Name" class="form-input" id="name" required>
+                    <input type="email" placeholder="Your Email" class="form-input" id="email" required>
+                    <input type="textarea" placeholder="Your Message" class="form-input" id="sujet" required> </textarea>
                     <button class="submit-button">Submit</button>
 
 
@@ -302,7 +305,28 @@
                 </form>
             </div>
         </section>
+             <!--footer Section -->
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">2025 Coffee Shop</p>
+            
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
 
+
+                </div>    
+                <p class="policy-text">
+                    <span class="separator" style="font-size:50px;">.</span>
+
+                    <a href="#" class="policy-link">Privacy Policy</a>
+                    <span class="separator" style="font-size:50px;">.</span>
+                    <a href="#" class="policy-link">Refund Policy</a>
+                </p>            
+            </div>
+
+        </footer>
          
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
